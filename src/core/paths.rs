@@ -144,7 +144,7 @@ fn runtime_dir() -> PathBuf {
         Path::new(crate::IPC_PATH)
             .parent()
             .map(Path::to_path_buf)
-            .unwrap_or_else(|| PathBuf::from("/run/clash-verge-service"))
+            .unwrap_or_else(|| PathBuf::from("/run/clash-verge-cloudxp-service"))
     }
 
     #[cfg(windows)]
